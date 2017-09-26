@@ -1,0 +1,33 @@
+(function($){
+  
+  $(document).ready(function(){
+    
+    $('input').tooltip();
+    
+    $('#findoutline').click(function(e){            
+      e.preventDefault();
+      var s = '', c = '', t = '', y = '';
+      if ($('#findsubject').val()) s = '/' + $('#findsubject').val();
+      if ($('#findcourse').val()) c = '/' + $('#findcourse').val();
+      if ($('#findsemester').val()) t = '/' + $('#findsemester').val();
+      if ($('#findyear').val()) y = '/' + $('#findyear').val();
+
+      //live
+      window.location.href = "http://georgiancollege.ca/course-outlines" + s + c + t + y + "/";
+      //local
+      //window.location.href = "http://localhost:8888/course-outlines" + s + c + t + y + "/";
+      //console.log("http://georgiancollege.ca/course-outlines" + s + c + t + y + "/");    
+      return false;
+    });
+    
+    $('#print').click(function(e){
+      e.preventDefault();
+      window.print();
+      return false;
+    });
+    
+    setTimeout(function(){$('.alert-error h1 > span').addClass('sad')}, 500);
+    
+  });
+  
+})(jQuery);

@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Author: Thomas Dexter
+   ========================================================================== */
+   
+body {
+  background: #ccc;
+}   
+#outline {
+  background: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px;
+  -webkit-box-shadow:  0px 0px 5px 2px #000;
+  box-shadow:  0px 0px 5px 2px #000;
+  -webkit-box-shadow:  0px 0px 5px 2px rgba(0, 0, 0, .5);
+  box-shadow:  0px 0px 5px 2px rgba(0, 0, 0, .5);
+}
+#outline .row-fluid {
+  padding: 0 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.navbar-text {
+  vertical-align: top;
+}
+.center {
+  text-align: center;
+}
+h1, h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+  margin: 20px 0 0 0;
+}
+.span3, .span9 {
+  min-height: 20px !important;
+}
+hr {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #eee;
+}
+.navbar .brand {
+  margin-left: 0px;
+}
+
+.alert-error h1 > span {
+  display: inline-block;
+  -webkit-transition: all 1000ms linear;
+  -moz-transition: all 1000ms linear;
+  -ms-transition: all 1000ms linear;
+  -o-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+.sad {  
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+@media (max-width: 767px) {
+  #outline {
+    padding: 10px;
+  }
+  #outline .row-fluid {
+    padding: 0 10px;
+  }
+  .tabular > div {
+    width: 50%;
+    float: left;
+  }
+}
+@media (max-width: 480px) {
+  .navbar .brand {
+    text-align: left;
+    display: inline-block;
+    width: 50%;
+    font-size: 130%;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+/* PRINT STYLES */
+@media print {
+  .navbar {
+    display: none;
+  }
+  body {
+    font-family: 'Times','Sans-serif';
+    font-size: 12pt;
+  }
+  .tabular > div.span3 {
+    width: 25%;
+    float: left;
+  }
+  .tabular > div.span9 {
+    width: 75%;
+    float: left;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://www.georgiancollege.ca/course-outlines/comp/2084/fall/2017 -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>COMP2084 Server-Side Scripting - Course Outline | Georgian College</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./COMP2084-ServerSideScripting-CourseOutline_files/bootstrap.min.css">
+    <style>
+      body {
+          padding-top: 60px;
+          padding-bottom: 40px;
+      }
+    </style>
+    <link rel="stylesheet" href="./COMP2084-ServerSideScripting-CourseOutline_files/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="./COMP2084-ServerSideScripting-CourseOutline_files/main.css">
+    <link rel="stylesheet" href="./COMP2084-ServerSideScripting-CourseOutline_files/print.css" type="text/css" media="print">
+
+    <script type="text/javascript" async="" src="./COMP2084-ServerSideScripting-CourseOutline_files/ga.js.download"></script><script src="./COMP2084-ServerSideScripting-CourseOutline_files/modernizr-2.6.2-respond-1.1.0.min.js.download"></script>
+  </head>
+  <body style="">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="btn-group pull-left">
+            <button id="print" class="btn" title="Print"><i class="icon-print"></i></button>
+            <!-- <a id="download" href="/course-outlines/topdf.php" target="_BLANK" class="btn" title="Download as PDF"><i class="icon-download-alt"></i></a> -->
+          </div>
+          <a class="brand" href="http://www.georgiancollege.ca/course-outlines/comp/2084/fall/2017#">Georgian College Course Outlines</a>
+          <div class="nav-collapse collapse">
+            <form class="navbar-form pull-right">
+              <span class="navbar-text">Choose a course:</span>
+              <input id="findsubject" class="span1" type="text" value="COMP" placeholder="Subject" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="ie: COMM or GNED" rel="tooltip">
+              <input id="findcourse" class="span1" type="text" value="2084" placeholder="Course" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="ie: 1000 or 1092" rel="tooltip">
+              <select id="findsemester" class="span2">
+                <option selected="selected" disabled="">Term
+                </option><option disabled="">----------</option>
+                <option selected="selected" value="fall">Fall</option>
+                <option value="winter">Winter</option>
+                <option value="summer">Summer</option>
+              </select>
+              <select id="findyear" class="span1">
+                <option disabled="">Year
+                </option><option disabled="">----------</option>
+                <option value="2016">2016</option>
+                <option selected="selected" value="2017">2017</option>
+                <option value="2018">2018</option>
+                <!-- <option disabled>----------</option> -->
+                <!-- <option value="custom">Enter a year</option> -->
+              </select>
+              <button type="btn" id="findoutline" class="btn">Find</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+        <div id="outline" class="container">
+      <img id="header-image" src="./COMP2084-ServerSideScripting-CourseOutline_files/course-outlines-header.jpg" width="1120" height="178" alt="Georgian College - Course Outline">
+
+      <!-- start course outline stuff -->
+  		<div class="row-fluid">
+  		  <div class="span12">
+  		    <h1 class="center">COURSE OUTLINE</h1>
+  		    <h2>Term: Fall 2017</h2>
+  		    <hr>
+  		  </div> <!-- /span12 -->
+  		</div> <!-- /row-fluid -->
+
+  		<div class="row-fluid tabular">
+  		  <div class="span3">
+  		    <strong>Subject Code:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span9">
+  		    <span>COMP</span>
+  		  </div> <!-- /span9 -->
+  		</div> <!-- /row-fluid -->
+
+  		<div class="row-fluid tabular">
+  		  <div class="span3">
+  		    <strong>Course Number:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <span>2084</span>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <strong>PLA Applicable:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <span>Yes</span>
+  		  </div> <!-- /span3 -->
+  		</div> <!-- /row-fluid -->
+
+  		<div class="row-fluid tabular">
+  		  <div class="span3">
+  		    <strong>Course Name:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span9">
+  		    <span>Server-Side Scripting</span>
+  		  </div> <!-- /span9 -->
+  		</div> <!-- /row-fluid -->
+
+  		<div class="row-fluid tabular">
+  		  <div class="span3">
+  		    <strong>Grade Mode:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <span>Numeric</span>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <strong>Credit Value:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <span>3.0</span>
+  		  </div> <!-- /span3 -->
+  		</div> <!-- /row-fluid -->
+
+  		<div class="row-fluid tabular">
+  		  <div class="span3">
+  		    <strong>Length:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <span>42.0</span>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <strong>Level:</strong>
+  		  </div> <!-- /span3 -->
+  		  <div class="span3">
+  		    <span>Post Secondary</span>
+  		  </div> <!-- /span3 -->
+  		</div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Prerequisite(s):</h3>
+        <p>    COMP 1006 Intro to Web Programming</p>
+      </div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Co-requisite(s) and Concurrent Prerequisite(s):</h3>
+        <p>None</p>
+      </div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Equivalent(s):</h3>
+        <p>    COMP 2007 Enterprise Computing</p>
+      </div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+  		  <div class="span12">
+          <hr>
+          <p><strong>Students are advised to retain course outlines for future use in support of applications for employment or transfer of credits</strong></p>
+        </div> <!-- /span12 -->
+  		</div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Course Description:</h3>
+        <p>This course provides further development in designing and creating web sites that can create, read, update, and delete (CRUD) data from a database. The students will use web concepts, Object-Oriented Programming (OOP), relational database principles, and other server-side scripting to create web-based, data-driven applications.</p>
+      </div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Learning Outcomes:</h3>
+        <p>Upon successful completion of this course, the student will have reliably demonstrated the ability to:<br>
+<br>
+1. apply server-side scripting technologies and techniques to the development of web applications.<br>
+2. implement CRUD functionality through the application of server-side scripting<br>
+3. devise an authentication method, and manage a user session<br>
+4. create new objects from classes, using properties, methods and events <br>
+5. write advanced scripts which run directly on the server to generate dynamic content.</p>
+      </div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Course Content:</h3>
+        <p>- Examining types of server-side scripting<br>
+- Review of relational database principles<br>
+- OOP components and techniques<br>
+- Web application security via authentication<br>
+- Producing dynamic web pages using current  server-side<br>
+   scripting technologies</p>
+      </div> <!-- /row-fluid -->
+
+      <div class="row-fluid">
+        <h3>Evaluation:</h3>
+        <p>Tests/examinations/assignments must be written/submitted at the time specified.  Requests for adjustments to that schedule must be made before the test/exam/assignment date to the faculty member.  Failure to do so will result in a mark of “0”, unless an illness/emergency can be proven with appropriate documentation at no cost to the College.</p>
+                  <p>The passing grade for all courses is 50%, or letter grade of P (Pass) or S (Satisfactory) unless otherwise noted below.  The passing weighted average for promotion through each semester of a program is 60% and is a requirement to graduate.</p>
+                <p></p>
+        <p>Evaluation is comprised of:<br>
+Assignments 75%<br>
+Tests 25%</p>
+      </div> <!-- /row-fluid -->
+
+            <div class="row-fluid">
+        <h3>Prior Learning Assessment:</h3>
+        <p>This course is eligible for Prior Learning Assessment.  If you feel you have acquired equivalent skills and knowledge through life and work experience, you can request an assessment.  Contact your program co-ordinator, or the Office of the Registrar.</p>
+      </div> <!-- /row-fluid -->
+      
+      <div class="row-fluid">
+        <h3>Appeals:</h3>
+        <p>A student at Georgian College can appeal the following:</p>
+        <ol type="a">
+          <li>a mark on the assignment, test, examination or practical experience;</li>
+          <li>a final mark for a course or co-op work term;</li>
+          <li>missing or incorrect assessment information on a grade report and/or transcript</li>
+        </ol>
+        <p>A student cannot appeal a decision regarding whether or not a PLA or Exemption is available for an individual course, nor the method of challenge used.</p>
+      </div> <!-- /row-fluid -->
+
+      <!-- end course outline content -->
+
+      <div class="row-fluid">
+  		  <div class="span12">
+          <hr>
+          <footer>
+            <p>© Georgian College 2013</p>
+          </footer>
+        </div> <!-- /span12 -->
+  		</div> <!-- /row-fluid -->
+
+    </div> <!-- /container -->
+    
+    <script src="./COMP2084-ServerSideScripting-CourseOutline_files/jquery.min.js.download"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+    <script src="./COMP2084-ServerSideScripting-CourseOutline_files/bootstrap.min.js.download"></script>
+
+    <script src="./COMP2084-ServerSideScripting-CourseOutline_files/main.js.download"></script>
+    <script>
+      /* iepp v2.1pre MIT @jon_neal & afarkas */
+      (function(win,doc){if(!window.attachEvent||!doc.createStyleSheet||!(function(){var elem=document.createElement("div");elem.innerHTML="<elem></elem>";return elem.childNodes.length!==1;})()){return;}
+      win.iepp=win.iepp||{};var iepp=win.iepp,elems=iepp.html5elements||'abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|subline|summary|time|video',elemsArr=elems.split('|'),elemsArrLen=elemsArr.length,elemRegExp=new RegExp('(^|\\s)('+elems+')','gi'),tagRegExp=new RegExp('<(\/*)('+elems+')','gi'),filterReg=/^\s*[\{\}]\s*$/,ruleRegExp=new RegExp('(^|[^\\n]*?\\s)('+elems+')([^\\n]*)({[\\n\\w\\W]*?})','gi'),docFrag=doc.createDocumentFragment(),html=doc.documentElement,head=doc.getElementsByTagName('script')[0].parentNode,bodyElem=doc.createElement('body'),styleElem=doc.createElement('style'),printMedias=/print|all/,body;function shim(doc){var a=-1;while(++a<elemsArrLen){doc.createElement(elemsArr[a]);}}
+      iepp.getCSS=function(styleSheetList,mediaType){try{if(styleSheetList+''===undefined){return'';}}catch(er){return'';}
+      var a=-1,len=styleSheetList.length,styleSheet,cssTextArr=[];while(++a<len){styleSheet=styleSheetList[a];if(styleSheet.disabled){continue;}
+      mediaType=styleSheet.media||mediaType;if(printMedias.test(mediaType)){cssTextArr.push(iepp.getCSS(styleSheet.imports,mediaType),styleSheet.cssText);}
+      mediaType='all';}
+      return cssTextArr.join('');};iepp.parseCSS=function(cssText){var cssTextArr=[],rule;while((rule=ruleRegExp.exec(cssText))!=null){cssTextArr.push(((filterReg.exec(rule[1])?'\n':rule[1])+rule[2]+rule[3]).replace(elemRegExp,'$1.iepp-$2')+rule[4]);}
+      return cssTextArr.join('\n');};iepp.writeHTML=function(){var a=-1;body=body||doc.body;while(++a<elemsArrLen){var nodeList=doc.getElementsByTagName(elemsArr[a]),nodeListLen=nodeList.length,b=-1;while(++b<nodeListLen){if(nodeList[b].className.indexOf('iepp-')<0){nodeList[b].className+=' iepp-'+elemsArr[a];}}}
+      docFrag.appendChild(body);html.appendChild(bodyElem);bodyElem.className=body.className;bodyElem.id=body.id;bodyElem.innerHTML=body.innerHTML.replace(tagRegExp,'<$1font');};iepp._beforePrint=function(){if(iepp.disablePP){return;}
+      styleElem.styleSheet.cssText=iepp.parseCSS(iepp.getCSS(doc.styleSheets,'all'));iepp.writeHTML();};iepp.restoreHTML=function(){if(iepp.disablePP){return;}
+      bodyElem.swapNode(body);};iepp._afterPrint=function(){iepp.restoreHTML();styleElem.styleSheet.cssText='';};shim(doc);shim(docFrag);if(iepp.disablePP){return;}
+      head.insertBefore(styleElem,head.firstChild);styleElem.media='print';styleElem.className='iepp-printshim';win.attachEvent('onbeforeprint',iepp._beforePrint);win.attachEvent('onafterprint',iepp._afterPrint);})(this,document);
+    </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-343936-1']);
+      _gaq.push(['_setDomainName', 'georgianc.on.ca']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  
+
+</body></html>

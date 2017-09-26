@@ -1,0 +1,15 @@
+Why should we learn ASP.NET?
+-Demand: it is used by many businesses around the world.
+-Many uses
+C# is relatively similar in syntax to Java and Swift
+It has also been used in mobile and game development
+
+Java C# Ruby PHP
+ASP.NET core?
+
+https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+
+Laravel/C#
+
+DATABASE 
+Server=localhost;Database=master;Trusted_Connection=True;
